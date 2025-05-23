@@ -1,4 +1,4 @@
-# <img src="docs/centurion_mascot.png" alt="Centurion mascot" width="120px" align="left" />
+# <img src="picture.png" alt="Centurion mascot" width="120px" align="left" />
 
 # Centurion · Julius&nbsp;⇄&nbsp;Foundation-Model Bridge
 
