@@ -33,7 +33,7 @@ HuBERT (base/large/xl),
 and Whisper (large‑v3)
 
 # 3️⃣  Launch the Centurion in two ways: online or offline
-both follows Julius's way
+both follow Julius's way
 
 # 4️⃣  Fire up Julius
 julius -C main.jconf 
@@ -57,7 +57,7 @@ No source‑code patching on Julius’ side.
 ---
 
 ## 🤝 Contributing
-Pull requests are welcome!  Please open an issue to discuss big changes first.
+Pull requests are welcome!  Please open an issue to discuss. Or ask by email: sheng.li@ieee.org
 
 ## 📜 License
 
