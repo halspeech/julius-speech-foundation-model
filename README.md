@@ -51,11 +51,9 @@ You should see something like:
 ## 🏗️ Architecture
 
 ```
-Audio → Centurion → Julius vecnet → LM rescoring → Final hypothesis
+Audio → Centurion → Julius vecnet (frame‑level log‑probs or logits matching the phone/state lists) → LM rescoring → Final hypothesis
 ```
-*Centurion* exposes Julius‑compatible feature streams: frame‑level log‑probs (or logits) matching the phone/state order declared in `mlist`.  
 No source‑code patching on Julius’ side.
-
 ---
 
 ## 🤝 Contributing
