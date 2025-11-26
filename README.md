@@ -74,7 +74,7 @@ If you use Centurion in academic work, please cite:
   author       = {Sheng Li},
   title        = {Centurion: foundation model plugin for Julius decoder},
   year         = 2025,
-  url          = {https://github.com/halspeech/centurion},
+  url          = {https://github.com/halspeech/julius-speech-foundation-model},
   note         = {Version 0.1.0}
 }
 ```
