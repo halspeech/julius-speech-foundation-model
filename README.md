@@ -1,9 +1,6 @@
 # <img src="picture.png" alt="Centurion mascot" width="120px" align="left" />
 
-# Centurion (speech foundation model plugin for Julius decoder)
-[![build](https://github.com/your-org/centurion/actions/workflows/ci.yml/badge.svg)](https://github.com/your-org/centurion/actions/workflows/ci.yml)
-[![license](https://img.shields.io/github/license/your-org/centurion)](LICENSE)
-[![PyPI](https://img.shields.io/pypi/v/centurion)](https://pypi.org/project/centurion/)
+# Centurion (foundation model plugin for Julius decoder)
 
 > **Centurion** is a lightweight plug-in that lets the classic **[Julius](https://github.com/julius-speech/julius)** decoder speak the language of modern speech‑foundation models—**wav2vec 2.0, WavLM, HuBERT, Whisper**, and more.  Keep Julius’ blazing‑fast decoding (no Kaldi lattice wrangling required), adding the acoustic power of giant self‑supervised encoders.
 
@@ -78,7 +75,7 @@ If you use Centurion in academic work, please cite:
 ```bibtex
 @software{centurion2025,
   author       = {Sheng Li},
-  title        = {Centurion: speech foundation model plugin for Julius decoder},
+  title        = {Centurion: foundation model plugin for Julius decoder},
   year         = 2025,
   url          = {https://github.com/halspeech/centurion},
   note         = {Version 0.1.0}
