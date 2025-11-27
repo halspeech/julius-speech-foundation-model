@@ -1,0 +1,70 @@
+
+
+-lmp 0.1 -0.1
+-lmp2 0.1 -0.1
+ 
+ 
+ -spdur 5 
+
+
+
+-h model/MMF_w2v.bin   
+-hlist model/hmmlist_w2v.bin
+-v model/lexicon_char_w2v_final 
+-d model/riva_zh_asr_set_2.1_4gram.bin
+
+# fast CTC
+-b 50
+-b2 100 
+-s 500 
+-m 10000 
+-n 300 
+
+
+
+
+
+-lookuprange 300 
+-sb 200 
+
+## additional penalty for transparent words
+-transp 0.0 
+
+
+## name of beginning-of-sentence word in dictionary
+-silhead '<s>'
+
+## name of end-of-sentence word in dictionary
+-siltail '</s>'
+
+-output 1 
+
+## Add a pause word entry to the dictionary
+-iwspentry "_ blk" 	# default word entry to be added
+-pausemodels "0" 
+
+-multipath
+
+-mapunk "<UNK>" 
+-iwsp			# append a skippable sp model at all word ends
+-iwsppenalty -5 	# transition penalty for the appenede sp models
+-spmodel "blk" 		# HMM model name to be appended
+-iwcd1 best 1 
+
+-nostrip		# switch OFF dropping of invalid input segment.
+
+-cmalpha 1 		# smoothing coef. alpha
+-separatescore		# output language and acoustic score separately
+
+
+
+-lv 800
+-headmargin 300 
+-tailmargin 300 
+-rejectshort 800
+
+-zmeanframe
+
+-fvad 3
+
+

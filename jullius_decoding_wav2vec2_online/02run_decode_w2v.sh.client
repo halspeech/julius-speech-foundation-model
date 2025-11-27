@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Real-time Julius + Wav2Vec2 pipeline launcher
+#   Julius (client) ⇦ feature server (client.py) ⇦ adintool (client)
+
+
+# --- start feature server (Python) --------------------------------
+python3 client.py client.cfg &
+Y_PID=$!
+echo "[run] Python bridge PID $PY_PID"
+sleep 15      # give it time to open both sockets
+
+
+
+
+# --- start adintool (audio client) --------------------------------
+
+xterm -e ./adintool -in mic -raw -freq 16000  -out adinnet -server 127.0.0.1 -port 5532 -segment  
+
+
+ADIN_PID=$!
+echo "[run] adintool PID $ADIN_PID"
+
+echo "Pipeline running.  Press Ctrl-C to stop."
+wait $PY_PID   # let ctrl-c (trap) or bridge exit stop everything
+
+
+

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Real-time Julius + Wav2Vec2 pipeline launcher
+#   
+# --- start Julius (server) ---------------------------------
+./julius -C main.jconf -demo -input vecnet $*  &
+JUL_PID=$!
+echo "[run] Julius PID $JUL_PID"
+sleep 5 
+
+
+
+ADIN_PID=$!
+
+
