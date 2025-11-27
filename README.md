@@ -27,7 +27,8 @@ conda activate foundation_features
 conda deactivate
 
 # compile julius-4.4.2 with following configurations (--enable-words-int --enable-sp-segment)
-the compiled binary for both linux and win (cygwin) are uploaded in bin dir
+the pre-compiled binary for both linux and win (cygwin) are uploaded in bin dir
+of course, you can compile for your own environment
 
 # 2️⃣  Download a model (we need to make some changes to the model, making the model work frame-by-frame)
 wav2vec 2.0 (base/large),
