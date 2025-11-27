@@ -1,4 +1,4 @@
 pre-extracted features from foundation models
-can download these features from https://huggingface.co/shenglisten/
+can download these features from https://huggingface.co/datasets/shenglisten/features_centurion
 
 or you can extract the features from foundation models and store them to HTK format
