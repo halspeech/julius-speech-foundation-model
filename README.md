@@ -19,7 +19,7 @@
 ## 🚀 Quick Start
 
 ```bash
-# 1️⃣  Install (Python 3.9+)
+# 1️⃣  Install 
 conda env create -f environment.yml
 # To activate this environment, use
 conda activate whisper_features
