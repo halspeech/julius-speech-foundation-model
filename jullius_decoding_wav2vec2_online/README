@@ -1,4 +1,4 @@
 This is Chinese language decoding recipe
-1. activate the whisper_feature environment
+1. activate the foundation_features environment
 2. run server side program on one terminal
 3. then run another client side program on another terminal
