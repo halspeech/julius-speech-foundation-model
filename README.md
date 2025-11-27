@@ -26,8 +26,8 @@ conda activate whisper_features
 # To deactivate an active environment, use
 conda deactivate
 
-# compile julius-4.4.2 with following configurations
-./configure --enable-words-int --enable-sp-segment --enable-setup=standard
+# compile julius-4.4.2 with following configurations (--enable-words-int --enable-sp-segment)
+the compiled binary for both linux and win (cygwin) are uploaded
 
 # 2️⃣  Download a model (we need to make some changes to the model, making the model work frame-by-frame)
 wav2vec 2.0 (base/large),
