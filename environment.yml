@@ -1,4 +1,4 @@
-name: whisper_features
+name: foundation_features
 channels:
   - pytorch
   - defaults
