@@ -1,0 +1,1 @@
+.\julius.exe -C main_w2v.config 
