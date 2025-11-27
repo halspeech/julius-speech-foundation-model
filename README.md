@@ -44,17 +44,21 @@ julius -C main.jconf
 You should see something like:
 
 ```
-[INFO] Model loaded (output dimension = 50457)
+[INFO] Model loaded (output dimension = ****)
 [INFO] Julius connected from 127.0.0.1:5531
 [INFO] Ready. Listening for speech...
 ```
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ Pipeline
 
 ```
-Audio → Centurion → Julius vecnet (frame‑level log‑probs or logits matching the phone/state lists) → LM rescoring → Final hypothesis
+online mode:
+Audio → adintool → Centurion (load foundation model) → vecnet (frame‑level log‑probs or logits matching the phone/state lists) → Julius decoding → Final hypothesis
+
+offline mode:
+Audio → Centurion (load foundation model) → generate features (frame‑level log‑probs or logits in HTK format) → Julius decoding → Final hypothesis
 ```
 No source‑code patching on Julius’ side.
 ---
