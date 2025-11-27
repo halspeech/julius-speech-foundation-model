@@ -1,0 +1,75 @@
+
+
+
+# 
+ -lmp 0.1 -0.1   
+ -lmp2 0.1 -0.1   
+
+
+
+
+
+-spdur 130
+
+
+
+
+# 
+-h model/MMF_whisper.bin 
+-hlist model/hmmlist_whisper
+-v model/lexicon_char_whisper
+-d model/riva_zh_asr_set_2.1_4gram.bin #download from nvidia
+
+
+# 
+-b 50 
+-b2 100 
+-s 500 
+-m 10000 
+-n 300 
+
+
+
+
+-lookuprange 300
+-sb 300 
+
+## additional penalty for transparent words
+-transp 1 
+
+
+
+## name of beginning-of-sentence word in dictionary
+-silhead '<s>'
+
+## name of end-of-sentence word in dictionary
+-siltail '</s>'
+
+-output 1 
+
+## Add a pause word entry to the dictionary
+-iwspentry "_ blk" 	# default word entry to be added
+-pausemodels "0" 
+
+-multipath
+
+-mapunk "<unk>" 
+-iwsp			# append a skippable sp model at all word ends
+-iwsppenalty 1 	# transition penalty for the appenede sp models
+-spmodel "blk" 	# HMM model name to be appended
+-iwcd1 best 1 
+
+-nostrip		# switch OFF dropping of invalid input segment.
+
+-cmalpha 1 #0.05		# smoothing coef. alpha
+-separatescore		# output language and acoustic score separately
+
+-filelist htkfeats.scp
+
+#-zmeanframe		
+
+-input outprob
+-spsegment
+
+
+
