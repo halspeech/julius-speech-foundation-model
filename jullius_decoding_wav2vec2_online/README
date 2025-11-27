@@ -1,4 +1,4 @@
 This is Chinese language decoding recipe
-1. activate the foundation_features environment
+1. activate the foundation_features environment (you need to install environment first)
 2. run server side program on one terminal (will use model in https://huggingface.co/shenglisten/model_julius4wav2vec2_cn)
 3. then run another client side program on another terminal (will use model in https://huggingface.co/shenglisten/Centurion_wav2vec2_cn)
