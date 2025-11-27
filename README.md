@@ -22,7 +22,7 @@
 # 1️⃣  Install 
 conda env create -f environment.yml
 # To activate this environment, use
-conda activate whisper_features
+conda activate foundation_features
 # To deactivate an active environment, use
 conda deactivate
 
