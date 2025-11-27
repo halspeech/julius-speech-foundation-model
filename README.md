@@ -12,7 +12,7 @@
 |---------|-------------|
 | **Model Support** | Built‑in presets for wav2vec 2.0 (base/large), WavLM (base/large), HuBERT (base/large/xl), and Whisper (large‑v3). |
 | **Streaming & offline** | Works with Julius’ *vecnet* real‑time protocol **and** batch HTK logit dumping. |
-| **GPU / CPU** | PyTorch ≥2.0, CUDA optional but loved. |
+| **GPU / CPU** | both supported |
 
 ---
 
