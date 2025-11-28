@@ -33,10 +33,10 @@ Of course, you can compile for your own environment.
 # 2️⃣  Download a model from https://huggingface.co/shenglisten/models
 # (We need to make some changes to the model, making the model work frame-by-frame)
 # 
-wav2vec 2.0 (base/large),
-WavLM (base/large),
-HuBERT (base/large/xl),
-and Whisper (large‑v3)
+wav2vec 2.0, and Whisper (large‑v3) models have well-tuned recipes
+WavLM, HuBERT, and Data2Vec recipes will be uploaded later 
+
+
 
 # 3️⃣  Launch the Centurion in two ways: online or offline
 Both follow Julius's way
