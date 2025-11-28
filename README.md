@@ -35,7 +35,11 @@ Of course, you can compile for your own environment.
 # 
 wav2vec 2.0, and Whisper (large‑v3) models have well-tuned recipes
 WavLM, HuBERT, and Data2Vec recipes will be uploaded later 
-
+All of the above models are used as Centurion feature-extracting models,
+and they have corresponding Julius decoding models
+https://huggingface.co/shenglisten/models
+We prepared pre-extracted features for user testings
+https://huggingface.co/shenglisten/datasets
 
 
 # 3️⃣  Launch the Centurion in two ways: online or offline
