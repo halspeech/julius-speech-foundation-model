@@ -2,7 +2,7 @@
 
 # Centurion (foundation model plugin for Julius decoder)
 
-> **Centurion** is a lightweight plug-in that lets the classic **[Julius](https://github.com/julius-speech/julius)** decoder speak the language of modern speech‑foundation models—**wav2vec 2.0, WavLM, HuBERT, Whisper**, and more.  Keep Julius’ blazing‑fast decoding (no Kaldi lattice wrangling required), adding the acoustic power of giant self‑supervised encoders.
+> **Centurion** is a lightweight plug-in that lets the classic **[Julius](https://github.com/julius-speech/julius)** decoder support speech‑foundation models—**wav2vec 2.0, WavLM, HuBERT, Whisper**, and more.  Keep Julius’ blazing‑fast decoding (no Kaldi lattice wrangling required), adding the acoustic power of giant self‑supervised encoders.
 
 ---
 
@@ -27,17 +27,17 @@ conda activate foundation_features
 conda deactivate
 
 # compile julius-4.4.2 with following configurations (--enable-words-int --enable-sp-segment)
-the pre-compiled binary for both linux and win (cygwin) are uploaded in bin dir
-of course, you can compile for your own environment
+The pre-compiled binary for both Linux and Windows (Cygwin) is uploaded to the bin dir
+Of course, you can compile for your own environment.
 
-# 2️⃣  Download a model (we need to make some changes to the model, making the model work frame-by-frame)
+# 2️⃣  Download a model (we need to make some changes to the model, making the model work frame-by-frame) from https://huggingface.co/shenglisten/models
 wav2vec 2.0 (base/large),
 WavLM (base/large),
 HuBERT (base/large/xl),
 and Whisper (large‑v3)
 
 # 3️⃣  Launch the Centurion in two ways: online or offline
-both follow Julius's way
+Both follow Julius's way
 
 # 4️⃣  Fire up Julius
 julius -C main.jconf 
