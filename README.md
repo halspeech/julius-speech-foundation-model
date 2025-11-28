@@ -30,7 +30,9 @@ conda deactivate
 The pre-compiled binary for both Linux and Windows (Cygwin) is uploaded to the bin dir
 Of course, you can compile for your own environment.
 
-# 2️⃣  Download a model (we need to make some changes to the model, making the model work frame-by-frame) from https://huggingface.co/shenglisten/models
+# 2️⃣  Download a model from https://huggingface.co/shenglisten/models
+# (We need to make some changes to the model, making the model work frame-by-frame)
+# 
 wav2vec 2.0 (base/large),
 WavLM (base/large),
 HuBERT (base/large/xl),
