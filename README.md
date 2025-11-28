@@ -102,4 +102,4 @@ If you use Centurion in academic work, please cite:
 
 ---
 
-**Ave, decoder!**  🏛️  With Centurion, your old‑friend Julius engine conquers the new frontiers of speech foundation models.
+🏛️  With Centurion, your old friend Julius conquers the new frontiers of speech foundation models.
