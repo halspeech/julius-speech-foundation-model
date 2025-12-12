@@ -97,6 +97,10 @@ If you use Centurion in academic work, please cite:
 
 ## 💬 Acknowledgements
 * Julius speech decoder – Nagoya Institute of Technology and Kyoto University
+
+本ソフトウェアは「大語彙連続音声認識エンジン Julius」を外部から呼び出しています。
+「Juliusディクテーションキット」のライセンスに従い、LICENSE.dictation-kitを同梱しています。
+  
 * wav2vec 2.0, HuBERT, WavLM – Facebook AI, Microsoft Research
 * Whisper – OpenAI
 
