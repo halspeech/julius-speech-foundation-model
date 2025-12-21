@@ -79,8 +79,9 @@ Pull requests are welcome!  Please open an issue to discuss. Or ask by email: sh
 ## 📜 License
 
 Centurion is released under the MIT License – see [LICENSE](LICENSE) for details.
+for Julius-related program or models, please follow Julius licence (also copied in this project)
+本ソフトウェアは「大語彙連続音声認識エンジン Julius」を外部から呼び出しています。 「Juliusディクテーションキット」のライセンスに従い、LICENSE.dictation-kitを同梱しています。
 
----
 
 ## 🏛️ Citation
 
