@@ -2,7 +2,7 @@
 
 # Centurion (foundation model plugin for Julius decoder, no source‑code patching on Julius’ side.)
 
-> **Centurion** is a lightweight plug-in that lets the classic **[Julius](https://github.com/julius-speech/julius)** decoder support speech‑foundation models—**wav2vec 2.0, WavLM, HuBERT, Whisper**, and more.  Keep Julius’ blazing‑fast decoding (no Kaldi lattice wrangling required), adding the acoustic power of giant self‑supervised encoders.
+> **Centurion** is a lightweight plug-in that lets the classic **[Julius](https://github.com/julius-speech/julius)** decoder support speech‑foundation models—**wav2vec 2.0, WavLM, HuBERT, Whisper**, and more.  Keep Julius’ blazing‑fast decoding (no Kaldi wfst building required), adding the acoustic power of large self‑supervised encoders.
 
 please check following link for more details:
 https://halspeech.github.io/Centurion.html
