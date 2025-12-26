@@ -111,4 +111,4 @@ If you use Centurion in academic work, please cite:
 ---
 
 🏛️  With Centurion, your old friend Julius conquers the new frontiers of speech foundation models.
-# <img src="picture2.png" alt="Centurion mascot" width="720px" align="center" />
+# <img src="picture2.png" alt="Centurion mascot" width="600px" align="center" />
