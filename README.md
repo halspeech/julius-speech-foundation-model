@@ -147,5 +147,6 @@ If you use Centurion in academic work, please cite:
 
 ---
 
-🏛️  With Centurion and troops reinforced by speech foundation models, your old friend Julius conquers the new frontiers of noise/errors/languages.
-# <img src="picture2.png" alt="Centurion mascot" width="500px" align="center" />
+🏛️  With Centurion and troops reinforced by speech foundation models, 
+your old friend Julius conquers the new frontiers of noise/errors/languages.
+# <img src="picture4.png" alt="Centurion mascot" width="500px" align="center" />
