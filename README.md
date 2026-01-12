@@ -72,6 +72,44 @@ Audio → Centurion (load foundation model) → generate features (frame‑level
 ```
 No source‑code patching on Julius’ side.
 ---
+## 🏗️ Models (1. Centurion feature extracting model (Centurion model), and 2. Julius decoding model (Julius model))
+
+```
+You can find the models from the following:
+
+for the Chinese language:
+Centurion feature extracting model:
+https://huggingface.co/shenglisten/Centurion_whisper_cn
+https://huggingface.co/shenglisten/Centurion_wav2vec2_cn
+Julius decoding model:
+https://huggingface.co/shenglisten/model_julius4whisper_cn
+https://huggingface.co/shenglisten/model_julius4wav2vec2_cn
+
+for the Japanese language:
+Centurion feature extracting model:
+https://huggingface.co/shenglisten/Centurion_wav2vec2_ja
+Julius decoding model:
+https://huggingface.co/shenglisten/model_julius4whisper_ja (CSJ LM model)
+https://huggingface.co/shenglisten/model_julius4whisper_ja (NVIDIA LM model)
+
+for the English language:
+Centurion feature extracting model:
+https://huggingface.co/shenglisten/Centurion_wavlm-libri-clean-100h-large_en
+https://huggingface.co/shenglisten/Centurion_wav2vec2-xls-r-1b_en
+https://huggingface.co/shenglisten/Centurion_wav2vec2-large-xlsr-53_en
+https://huggingface.co/shenglisten/Centurion_hubert-xlarge-ls960-ft_en
+https://huggingface.co/shenglisten/Centurion_data2vec-audio-base-960h_en
+Julius decoding model:
+https://huggingface.co/shenglisten/model_julius4wavlm_en
+https://huggingface.co/shenglisten/model_julius4w2v-xlr.nvlm_en (NVIDIA LM model)
+https://huggingface.co/shenglisten/model_julius4w2v_en
+https://huggingface.co/shenglisten/model_julius4hubert_en
+https://huggingface.co/shenglisten/model_julius4hubert.nvlm_en (NVIDIA LM model)
+https://huggingface.co/shenglisten/model_julius4d2v-base_en
+
+
+```
+---
 
 ## 🤝 Contributing
 Pull requests are welcome!  Please open an issue to discuss. Or ask by email: sheng.li@ieee.org
