@@ -58,25 +58,10 @@ You should see something like:
 [INFO] Julius connected from 127.0.0.1:5531
 [INFO] Ready. Listening for speech...
 ```
-
----
-
-## 🏗️ Pipeline
-
+You can find the models from the following, and list is still updating:
+1. Centurion feature extracting model (Centurion model), 
+2. Julius decoding model (Julius model))
 ```
-online mode:
-Audio → adintool → Centurion (load foundation model) → vecnet (frame‑level log‑probs or logits matching the phone/state lists) → Julius decoding → Final hypothesis
-
-offline mode:
-Audio → Centurion (load foundation model) → generate features (frame‑level log‑probs or logits in HTK format) → Julius decoding → Final hypothesis
-```
-No source‑code patching on Julius’ side.
----
-## 🏗️ Models (1. Centurion feature extracting model (Centurion model), and 2. Julius decoding model (Julius model))
-
-```
-You can find the models from the following:
-
 for the Chinese language:
 Centurion feature extracting model:
 https://huggingface.co/shenglisten/Centurion_whisper_cn
@@ -107,8 +92,22 @@ https://huggingface.co/shenglisten/model_julius4hubert_en
 https://huggingface.co/shenglisten/model_julius4hubert.nvlm_en (NVIDIA LM model)
 https://huggingface.co/shenglisten/model_julius4d2v-base_en
 
+```
+
+---
+
+## 🏗️ Pipeline
 
 ```
+online mode:
+Audio → adintool → Centurion (load foundation model) → vecnet (frame‑level log‑probs or logits matching the phone/state lists) → Julius decoding → Final hypothesis
+
+offline mode:
+Audio → Centurion (load foundation model) → generate features (frame‑level log‑probs or logits in HTK format) → Julius decoding → Final hypothesis
+```
+No source‑code patching on Julius’ side.
+---
+
 ---
 
 ## 🤝 Contributing
